@@ -1,0 +1,22 @@
+---
+title: "Dev. Data products W2"
+author: "Francesco Maria Federici"
+date: "09 May 2020"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Francesco's Map
+
+Hi there, this is where I live
+
+```{r pressure, echo=FALSE}
+library(leaflet)
+home<-leaflet() %>% addTiles()
+home<- home %>% addMarkers(lat=42.2918, lng=12.2156, popup="Botceaux")
+home
+```
+
